@@ -15,7 +15,7 @@ export default function useBreedList(animal) {
 
   useEffect(() => {
     abortCtr.current = animal;
-    requestBreedlist().catch((e) => console.warn(e));
+    if (animal) requestBreedlist().catch((e) => console.warn(e));
   }, [animal]);
 
   async function requestBreedlist() {
