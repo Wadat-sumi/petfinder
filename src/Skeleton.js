@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react/cjs/react.development";
+import { useEffect, useState } from "react";
 
 const Skeleton = () => {
   const imgSrc = "https://i.imgur.com/NL4X06F.png";
