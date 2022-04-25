@@ -12,6 +12,7 @@ class Details extends Component {
   toggleModal = () => this.setState({ showModal: !this.state.showModal });
 
   async componentDidMount() {
+    window.scrollTo(0,0);
     if (this.props.params.id == this.props.refHook.current.id) {
       this.setState({ loading: false, ...this.props.refHook.current });
     } else {
